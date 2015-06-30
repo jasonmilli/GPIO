@@ -16,8 +16,3 @@ class GPIO {
         file_put_contents("/sys/class/gpio/gpio{$this->pin}/value",0);
     }
 }
-
-$led = new GPIO(27);
-$led->on();
-sleep(2);
-$led->off();
